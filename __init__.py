@@ -3,6 +3,7 @@ import pandas as pd
 DIR_ROOT = '/'.join([i for i in __file__.split('/') if __file__.split('/').index(i) <= len(__file__.split('/'))-2]) + '/'
 DIR_DATA = DIR_ROOT + 'data/'
 DIR_SITE = DIR_ROOT + 'site/'
+DIR_IMAGES = DIR_SITE + 'assets/images/'
 
 SRC = {
     'Vaccinations': 
@@ -17,7 +18,7 @@ def dataset_read(source_name):
     return pd.read_pickle(DIR_DATA + SRC[source_name]['pickle'] + '.pkl')
 
 def dataset_get(source_name):
-    return pd.read_csv(SRC[source_name]['url']).to_pickle(DIR_DATA + SRC['pickle'] + '.pkl')
+    return pd.read_csv(SRC[source_name]['url']).to_pickle(DIR_DATA + SRC[source_name]['pickle'] + '.pkl')
 
 
 

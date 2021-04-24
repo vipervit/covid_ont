@@ -64,3 +64,9 @@ node_modules/
 
 # dotenv environment variables file
 .env
+data/cases.pkl
+data/vaxxs.pkl
+*.pkl
+site/screenshot.png
+site/byunit.png
+*.png

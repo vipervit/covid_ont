@@ -5,9 +5,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.dates import DateFormatter
 import matplotlib.dates as mdates
-from ds.advanced.covid_ont import dataset_read, DIR_SITE
+from ds.advanced.covid_ont import dataset_read, DIR_IMAGES
 
-f_plot='vaccases'
+f_plot='vaccases-1700x600.png'
 
 df_cases=dataset_read('Cases by PHU')[['Date', 'Total']]
 df_cases.columns=['Date', 'New Cases']                 
@@ -47,4 +47,4 @@ ax1.annotate(str(df_plot.index.min().strftime('%d-%b-%Y')), xy=(0, -18), xycoord
 ax1.annotate(str(df_plot.index.max().strftime('%d-%b-%Y')), xy=(945, -18), xycoords='axes points', color='red', fontsize=13)
 plt.title('Vaccinations vs. New cases', fontsize=20)
 
-fig.savefig(DIR_SITE + f_plot)
+fig.savefig(DIR_IMAGES + f_plot)
