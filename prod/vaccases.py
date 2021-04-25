@@ -5,12 +5,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.dates import DateFormatter
 import matplotlib.dates as mdates
-from ds.advanced.covid_ont import dataset_read, DIR_IMAGES
+from covid_ont import dataset_read, DIR_IMAGES
 
 f_plot='vaccases-1700x600.png'
 
 df_cases=dataset_read('Cases by PHU')[['Date', 'Total']]
-df_cases.columns=['Date', 'New Cases']                 
+df_cases.columns=['Date', 'New Cases']
 df_vac=dataset_read('Vaccinations')[['report_date', 'total_individuals_fully_vaccinated']]
 df_vac.columns=['Date', 'Fully Vaccinated Total']
 

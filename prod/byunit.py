@@ -3,7 +3,7 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
-from ds.advanced.covid_ont import dataset_read, DIR_IMAGES
+from covid_ont import dataset_read, DIR_IMAGES
 
 f_plot='byunit-1500x600.png'
 
@@ -24,5 +24,3 @@ ax.spines['right'].set_visible(False)
 df_cases_5.plot(ax=ax)
 
 fig.savefig(DIR_IMAGES + f_plot)
-
-
