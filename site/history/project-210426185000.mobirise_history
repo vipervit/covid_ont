@@ -14,13 +14,13 @@
         "dangerColor": "#ff9966",
         "mainFont": "Jost",
         "display1Font": "Jost",
-        "display1Size": "3.2",
+        "display1Size": "4.6",
         "display2Font": "Jost",
         "display2Size": "2",
         "display5Font": "Jost",
-        "display5Size": "1.2",
+        "display5Size": "2",
         "display7Font": "Jost",
-        "display7Size": "1",
+        "display7Size": 1.2,
         "display4Font": "Jost",
         "display4Size": "1.2",
         "isRoundedButtons": false,
@@ -38,26 +38,6 @@
         "css": "'Jost', sans-serif",
         "name": "Jost",
         "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
-      },
-      {
-        "css": "'Oswald', sans-serif",
-        "name": "Oswald",
-        "url": "https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700"
-      },
-      {
-        "css": "'PT Sans', sans-serif",
-        "name": "PT Sans",
-        "url": "https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i"
-      },
-      {
-        "css": "'Roboto Mono', monospace",
-        "name": "Roboto Mono",
-        "url": "https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700,100i,200i,300i,400i,500i,600i,700i"
-      },
-      {
-        "css": "'Barlow', sans-serif",
-        "name": "Barlow",
-        "url": "https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
       }
     ],
     "uniqCompNum": 35,
@@ -65,7 +45,7 @@
     "imageResize": true,
     "screenshot": "screenshot.png",
     "favicon": false,
-    "mbrsiteDomain": "8tbzobq23f",
+    "mbrsiteDomain": "zt2fecgsnu",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
