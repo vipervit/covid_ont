@@ -1,9 +1,8 @@
-#!/bin/bash
 echo "Getting latest data...."
-python prod/getdata.py
+python py/getdata.py
 echo "Making images...."
-python prod/vaccases.py
-python prod/byunit.py
+python py/vaccases.py
+python py/byunit.py
 echo "Deploying...."
 firebase deploy
 echo "Done."

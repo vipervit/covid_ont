@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 import pandas as pd
 import matplotlib.pyplot as plt
 from covid_ont import dataset_read, DIR_IMAGES
