@@ -5,6 +5,9 @@ DIR_ROOT=os.getcwd()
 DIR_DATA = ''.join([DIR_ROOT, os.sep, 'data', os.sep])
 DIR_SITE = ''.join([DIR_ROOT, os.sep, 'site', os.sep])
 DIR_IMAGES = ''.join([DIR_SITE, os.sep, 'assets', os.sep, 'images', os.sep])
+DIR_LOG = DIR_ROOT
+FNAME_DEPLOY_LOG = 'deploy.log'
+F_DEPLOY_LOG = ''.join([DIR_ROOT, os.sep, FNAME_DEPLOY_LOG]) 
 
 SRC = {
     'Vaccinations':
