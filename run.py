@@ -1,6 +1,6 @@
 import sys
 
-if 'win' in sys.platform:
+if 'win32' in sys.platform:
     sys.exit('Cannot run on Windows.')
 
 from daemon import runner
