@@ -45,14 +45,13 @@
     "imageResize": true,
     "screenshot": "screenshot.png",
     "favicon": false,
-    "mbrsiteDomain": "ccoksqs613",
+    "mbrsiteDomain": "aofvuvfgna",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "cookiesAlert": false,
-    "gdpr": false,
-    "publishChangesOnly": true
+    "gdpr": false
   },
   "pages": {
     "index.html": {
