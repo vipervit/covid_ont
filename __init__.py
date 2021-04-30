@@ -7,7 +7,9 @@ DIR_SITE = ''.join([DIR_ROOT, 'site', os.sep])
 DIR_IMAGES = ''.join([DIR_SITE, 'assets', os.sep, 'images', os.sep])
 DIR_LOG = DIR_ROOT
 FNAME_DEPLOY_LOG = 'deploy.log'
-F_DEPLOY_LOG = ''.join([DIR_ROOT, os.sep, FNAME_DEPLOY_LOG]) 
+F_DEPLOY_LOG = ''.join([DIR_ROOT, os.sep, FNAME_DEPLOY_LOG])
+
+__version__=1.0
 
 SRC = {
     'Vaccinations':
