@@ -6,12 +6,12 @@ import matplotlib.dates as mdates
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 import covid_ont
-from covid_ont import dataset_read, DIR_IMAGES
+from covid_ont import dataset_read, DIR_IMAGES, FIGSIZES
 
 
 def make_plot(df_plot):
     f_plot='byunit-1500x600.png'
-    fig, ax = plt.subplots(figsize=(17, 7))
+    fig, ax = plt.subplots(figsize=FIGSIZES)
     ax.spines['left'].set_visible(False)
     ax.spines['bottom'].set_visible(False)
     ax.spines['top'].set_visible(False)

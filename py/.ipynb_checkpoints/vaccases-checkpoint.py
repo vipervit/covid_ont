@@ -8,12 +8,12 @@ import matplotlib.dates as mdates
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
-from covid_ont import dataset_read, DIR_IMAGES
+from covid_ont import dataset_read, DIR_IMAGES, FIGSIZES
 
 def make_plot(df_plot):
     f_plot='vaccases-1700x600.png'
     last_updated=str(df_plot.index.max().strftime('%d-%b-%Y'))
-    fig, ax1 = plt.subplots(1, 1, figsize=(17,7))
+    fig, ax1 = plt.subplots(1, 1, figsize=FIGSIZES)
     plt.style.use('fast')
     ax2=ax1.twinx()
     df_plot.plot(ax=ax1, kind='area', alpha=0.8, y='New Cases', color='red', label='Cases')
