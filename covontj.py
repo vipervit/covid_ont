@@ -14,7 +14,7 @@ from covid_ont.deploy import deploy, test_deploy
 
 def log(msg):
     with open(F_DEPLOY_LOG, 'w') as f:
-        f.write('{}, {}'.format(msg, datetime.now().strftime('%d-%b %H:%M%:%S')))
+        f.write('{}, {}\n'.format(msg, datetime.now().strftime('%d-%b %H:%M%:%S')))
 
 def execute():
     cycle=0
