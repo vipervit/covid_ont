@@ -15,5 +15,8 @@ def deploy():
     subprocess.run(['firebase', 'deploy'])
     print('Done.')
 
+def test_deploy():
+    return 'test_deploy says hi'
+
 if __name__ == '__main__':
     deploy()
