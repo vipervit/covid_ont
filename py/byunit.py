@@ -10,7 +10,7 @@ from covid_ont import dataset_read, DIR_IMAGES, FIGSIZES
 
 
 def make_plot(df_plot):
-    f_plot='byunit-1500x600.png'
+    f_plot='byunit.png'
     fig, ax = plt.subplots(figsize=FIGSIZES)
     ax.spines['left'].set_visible(False)
     ax.spines['bottom'].set_visible(False)
@@ -32,4 +32,3 @@ df_cases_5=df_cases.drop([col for col in df_cases.columns if col not in top_5 an
 df_cases_5.set_index('Date', inplace=True)
 
 make_plot(df_cases_5)
-

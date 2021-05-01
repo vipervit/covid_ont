@@ -16,7 +16,7 @@ warnings.filterwarnings(action='ignore')
 import covid_ont
 from covid_ont import dataset_read, dataset_get, DIR_IMAGES, FIGSIZES
 
-f_plot='doses-1700x700.png'
+f_plot='doses.png'
 
 dataset_get('Vaccinations')
 df_vac_src=dataset_read('Vaccinations')
@@ -48,4 +48,3 @@ plt.legend(handles=[top_bar, bottom_bar])
 plt.title('Vaccinations', fontsize=18)
 
 plt.savefig(DIR_IMAGES + f_plot, facecolor='oldlace')
-
