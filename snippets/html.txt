@@ -1,3 +1,5 @@
+<meta http-equiv="Cache-Control" content="no-store" />
+
 <section class="footer7 cid-svtrGnlqW0" once="footers" id="footer7-w">
     <div class="container">
         <div class="media-container-row align-center mbr-white">
