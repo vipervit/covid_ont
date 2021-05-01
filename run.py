@@ -11,4 +11,4 @@ def run():
          deploy()
          sleep(86400)
 drunner=runner.DaemonRunner(run())
-runner.do_action()
+drunner.do_action()

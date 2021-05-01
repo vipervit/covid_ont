@@ -1,13 +1,17 @@
 import os
 import pandas as pd
 
+__version__='1.01'
+
 DIR_ROOT = __file__.split('__init__')[0]
 DIR_DATA = ''.join([DIR_ROOT, 'data', os.sep])
 DIR_SITE = ''.join([DIR_ROOT, 'site', os.sep])
 DIR_IMAGES = ''.join([DIR_SITE, 'assets', os.sep, 'images', os.sep])
 DIR_LOG = DIR_ROOT
 FNAME_DEPLOY_LOG = 'deploy.log'
-F_DEPLOY_LOG = ''.join([DIR_ROOT, os.sep, FNAME_DEPLOY_LOG]) 
+F_DEPLOY_LOG = ''.join([DIR_ROOT, os.sep, FNAME_DEPLOY_LOG])
+
+FIGSIZES=(17,7)
 
 SRC = {
     'Vaccinations':

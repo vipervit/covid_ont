@@ -9,6 +9,8 @@ DIR_LOG = DIR_ROOT
 FNAME_DEPLOY_LOG = 'deploy.log'
 F_DEPLOY_LOG = ''.join([DIR_ROOT, os.sep, FNAME_DEPLOY_LOG]) 
 
+FIGSIZES=(17,7)
+
 SRC = {
     'Vaccinations':
         {'url': 'https://data.ontario.ca/dataset/752ce2b7-c15a-4965-a3dc-397bf405e7cc/resource/8a89caa9-511c-4568-af89-7f2174b4378c/download/vaccine_doses.csv',
