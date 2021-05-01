@@ -19,7 +19,7 @@ def log(msg):
 def execute():
     cycle=0
     while True:
-         # deploy()
+         deploy()
          cycle += 1
          log('Cycle: ' + str(cycle))
          sleep(interval)
