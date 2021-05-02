@@ -11,6 +11,7 @@ def deploy():
     print('Making plots...')
     from covid_ont.py import vaccases
     from covid_ont.py import byunit
+    from covid_ont.py import doses
     print('Deploying...')
     subprocess.run(['firebase', 'deploy'])
     print('Done.')
