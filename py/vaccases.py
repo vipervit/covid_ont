@@ -10,7 +10,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 from covid_ont import dataset_read, DIR_IMAGES, FIGSIZES
 
-def make_plot_vaccases(df_plot):
+def make_plot(df_plot):
     f_plot='vaccases.png'
     last_updated=str(df_plot.index.max().strftime('%d-%b-%Y'))
     fig, ax1 = plt.subplots(1, 1, figsize=(17,7))
