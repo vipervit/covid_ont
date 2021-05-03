@@ -10,14 +10,14 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 from covid_ont import dataset_read, DIR_IMAGES, FIGSIZES
 
-def make_plot(df_plot):
+def make_plot_vaccases(df_plot):
     f_plot='vaccases.png'
     last_updated=str(df_plot.index.max().strftime('%d-%b-%Y'))
-    fig, ax1 = plt.subplots(1, 1, figsize=FIGSIZES)
+    fig, ax1 = plt.subplots(1, 1, figsize=(17,7))
     plt.style.use('fast')
     ax2=ax1.twinx()
-    df_plot.plot(ax=ax1, kind='area', alpha=0.8, y='New Cases', color='red', label='Cases')
-    df_plot.plot(ax=ax2, kind='area', alpha=0.5, y='Fully Vaccinated Total', color='green', label='Vaccinated')
+    df_plot.plot(ax=ax1, kind='area', alpha=0.8, y='New Cases', color='red', label='New Daily Cases')
+    df_plot.plot(ax=ax2, kind='area', alpha=0.5, y='Total Doses Administered', color='green', label='Vaccinated (at least one dose)')
     ax1.set_xlabel('')
     ax1.legend(loc=0, bbox_to_anchor=(0.12, 1.08))
     ax2.legend(loc=1, bbox_to_anchor=(0.96, 1.08))
@@ -33,9 +33,10 @@ def make_plot(df_plot):
     ax1.xaxis.set_major_formatter(DateFormatter("%d-%b-%Y"))
     ax1.get_yaxis().set_major_formatter(ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
     ax2.get_yaxis().set_major_formatter(ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
-    plt.title('Fully Vaccinated vs. Daily New Cases', fontsize=18)
+    plt.title('Total Doses Adminsitered vs. Daily New Cases', fontsize=18)
     plt.annotate(last_updated, xy=(550, 370), xycoords='figure points', color='red', fontsize=17) # last updated
     fig.savefig(DIR_IMAGES + f_plot, facecolor='oldlace')
+
 
 df_cases=dataset_read('Cases by PHU')[['Date', 'Total']]
 df_cases.columns=['Date', 'New Cases']
