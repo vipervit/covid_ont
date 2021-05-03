@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.getenv('DEV_HOME'))
+sys.path.append(os.getenv('SITES_HOME'))
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -7,8 +11,24 @@ from matplotlib import ticker
 import matplotlib.dates as mdates
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
+import covid_ont
+from covid_ont import dataset_read, dataset_get, DIR_IMAGES
 
-from covid_ont import dataset_read, DIR_IMAGES, FIGSIZES
+dataset_get('Vaccinations')
+dataset_get('Cases by PHU')
+
+df_cases=dataset_read('Cases by PHU')[['Date', 'Total']]
+df_cases.columns=['Date', 'New Cases']
+
+df_vac=dataset_read('Vaccinations')[['report_date', 'total_doses_administered']]
+df_vac.columns=['Date', 'Total Doses Administered']
+
+df_plot=pd.merge(df_vac, df_cases, on='Date')
+df_plot.fillna(0, inplace=True)
+df_plot['Fully Vaccinated Total']=df_plot['Total Doses Administered'].astype(int)
+df_plot.drop(df_plot[df_plot['Total Doses Administered']==0].index, inplace=True)
+df_plot['Date']=pd.to_datetime(df_plot['Date'])
+df_plot.set_index('Date', inplace=True)
 
 def make_plot(df_plot):
     f_plot='vaccases.png'
@@ -36,19 +56,5 @@ def make_plot(df_plot):
     plt.title('Total Doses Adminsitered vs. Daily New Cases', fontsize=18)
     plt.annotate(last_updated, xy=(550, 370), xycoords='figure points', color='red', fontsize=17) # last updated
     fig.savefig(DIR_IMAGES + f_plot, facecolor='oldlace')
-
-
-df_cases=dataset_read('Cases by PHU')[['Date', 'Total']]
-df_cases.columns=['Date', 'New Cases']
-df_vac=dataset_read('Vaccinations')[['report_date', 'total_individuals_fully_vaccinated']]
-df_vac.columns=['Date', 'Fully Vaccinated Total']
-
-
-df_plot=pd.merge(df_vac, df_cases, on='Date')
-df_plot.fillna(0, inplace=True)
-df_plot['Fully Vaccinated Total']=df_plot['Fully Vaccinated Total'].astype(int)
-df_plot.drop(df_plot[df_plot['Fully Vaccinated Total']==0].index, inplace=True)
-df_plot['Date']=pd.to_datetime(df_plot['Date'])
-df_plot.set_index('Date', inplace=True)
 
 make_plot(df_plot)
