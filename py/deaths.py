@@ -15,11 +15,11 @@ import os
 sys.path.append(os.getenv('DEV_HOME'))
 sys.path.append(os.getenv('SITES_HOME'))
 import covid_ont
-from covid_ont import dataset_read, dataset_get, DIR_IMAGES
+from covid_ont import dataset_read, dataset_get, DIR_IMAGES, FIGSIZES
 
 def make_plot(df_plot):
     f_plot='deaths'
-    fig, ax1 = plt.subplots(1, 1, figsize=(17,7))
+    fig, ax1 = plt.subplots(1, 1, figsize=FIGSIZES)
     plt.style.use('fast')
     ax2=ax1.twinx()
     df_plot.plot(ax=ax1, kind='area', alpha=0.5, y='New Cases', color='red', label='Daily Cases')
