@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-__version__='1.12.01'
+__version__='1.12.04'
 
 DIR_ROOT = __file__.split('__init__')[0]
 DIR_DATA = ''.join([DIR_ROOT, 'data', os.sep])
@@ -20,9 +20,9 @@ SRC = {
     'Cases by PHU':
         {'url': 'https://data.ontario.ca/dataset/f4f86e54-872d-43f8-8a86-3892fd3cb5e6/resource/8a88fe6d-d8fb-41a3-9d04-f0550a44999f/download/daily_change_in_cases_by_phu.csv',
          'pickle': 'byphu'},
-    'Cases':
+    'Cases & Tests':
         {'url': 'https://data.ontario.ca/dataset/f4f86e54-872d-43f8-8a86-3892fd3cb5e6/resource/ed270bb8-340b-41f9-a7c6-e8ef587e6d11/download/covidtesting.csv',
-         'pickle': 'cases'}
+         'pickle': 'casets'}
 }
 
 def dataset_read(source_name):
