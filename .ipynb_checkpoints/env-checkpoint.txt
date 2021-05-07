@@ -1,1 +1,0 @@
-conda env config vars set DEV_HOME='$USER/DEV/ds/advanced/', SITES_HOME='$USER/DEV/sites'
