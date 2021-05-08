@@ -1,7 +1,9 @@
 import subprocess
 import sys
 import covid_ont
-from covid_ont import DIR_LOG, DIR_SITE
+from covid_ont import DIR_LOG, DIR_SITE, __version__
+
+print('Deploying version ' + __version__)
 
 def deploy():
     if len(DIR_SITE)==0:
