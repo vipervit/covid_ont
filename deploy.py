@@ -1,7 +1,9 @@
 import subprocess
 import sys
 import covid_ont
-from covid_ont import DIR_LOG, DIR_SITE
+from covid_ont import DIR_LOG, DIR_SITE, __version__
+
+print('Deploying version ' + __version__)
 
 def deploy():
     if len(DIR_SITE)==0:
@@ -19,6 +21,8 @@ def deploy():
     print('doses.py done.')
     from covid_ont.py import deaths
     print('deaths.py done.')
+    from covid_ont.py import vaxregr
+    print('vaxregr.py done.')
 
     print('Deploying...')
     subprocess.run(['firebase', 'deploy'])
