@@ -21,6 +21,8 @@ def deploy():
     print('doses.py done.')
     from covid_ont.py import deaths
     print('deaths.py done.')
+    from covid_ont.py import vaxregr
+    print('vaxregr.py done.')
 
     print('Deploying...')
     subprocess.run(['firebase', 'deploy'])
