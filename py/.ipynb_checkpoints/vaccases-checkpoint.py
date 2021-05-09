@@ -41,8 +41,8 @@ def make_plot(df_plot):
     df_plot.plot(ax=ax1, kind='area', alpha=0.8, y='New Cases', color='red', label=legend_labels[0])
     df_plot.plot(ax=ax2, kind='area', alpha=0.5, y='Total Doses Administered', color='green', label=legend_labels[1])
     ax1.set_xlabel('')
-    ax1.set_ylabel(ax_labels[0])
-    ax2.set_ylabel(ax_labels[1])    
+    ax1.set_ylabel(ax_labels[0], fontsize=20)
+    ax2.set_ylabel(ax_labels[1], fontsize=20)
     ax1.legend(loc=0, bbox_to_anchor=(0.12, 1.08))
     ax2.legend(loc=1, bbox_to_anchor=(0.96, 1.08))
     ax1.spines['left'].set_visible(False)
@@ -57,7 +57,7 @@ def make_plot(df_plot):
     ax1.xaxis.set_major_formatter(DateFormatter("%d-%b-%Y"))
     ax1.get_yaxis().set_major_formatter(ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
     ax2.get_yaxis().set_major_formatter(ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
-    plt.title('Total Doses Adminsitered vs. Daily New Cases', fontsize=18)
+    plt.title('Total Doses Administered vs. Daily New Cases', fontsize=18)
     plt.annotate(last_updated, xy=(550, 370), xycoords='figure points', color='red', fontsize=17) # last updated
     fig.savefig(DIR_IMAGES + f_plot, facecolor='oldlace')
 

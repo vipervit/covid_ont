@@ -56,7 +56,7 @@ X_pred=np.reshape(df_pred.index, (-1,1))
 y_pred=pipe.predict(X_pred)
 
 df_pred['Percentage of Population Vaccinated with One Dose']=y_pred
-df_pred=df_pred[df_pred['Percentage of Population Vaccinated with One Dose']<100]
+df_pred=df_pred[df_pred['Percentage of Population Vaccinated with One Dose']<101]
 df_plot_pred=df_pred.copy()
 df_plot_pred.columns=['Projection']
 

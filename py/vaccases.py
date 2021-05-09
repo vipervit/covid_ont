@@ -57,7 +57,7 @@ def make_plot(df_plot):
     ax1.xaxis.set_major_formatter(DateFormatter("%d-%b-%Y"))
     ax1.get_yaxis().set_major_formatter(ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
     ax2.get_yaxis().set_major_formatter(ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
-    plt.title('Total Doses Adminsitered vs. Daily New Cases', fontsize=18)
+    plt.title('Total Doses Administered vs. Daily New Cases', fontsize=18)
     plt.annotate(last_updated, xy=(550, 370), xycoords='figure points', color='red', fontsize=17) # last updated
     fig.savefig(DIR_IMAGES + f_plot, facecolor='oldlace')
 
