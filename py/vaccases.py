@@ -12,7 +12,7 @@ import matplotlib.dates as mdates
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 import covid_ont
-from covid_ont import dataset_read, dataset_get, DIR_IMAGES
+from covid_ont import dataset_read, dataset_get, DIR_IMAGES, FIGSIZES
 
 dataset_get('Vaccinations')
 dataset_get('Cases by PHU')
@@ -35,7 +35,7 @@ def make_plot(df_plot):
     legend_labels=['New Daily Cases', 'Vaccinated (at least one dose)']
     f_plot='vaccases.png'
     last_updated=str(df_plot.index.max().strftime('%d-%b-%Y'))
-    fig, ax1 = plt.subplots(1, 1, figsize=(17,7))
+    fig, ax1 = plt.subplots(1, 1, figsize=FIGSIZES)
     plt.style.use('fast')
     ax2=ax1.twinx()
     df_plot.plot(ax=ax1, kind='area', alpha=0.8, y='New Cases', color='red', label=legend_labels[0])
