@@ -54,7 +54,7 @@ def make_plot(df_plot):
     ax1.spines['right'].set_visible(False)
     ax2.spines['right'].set_visible(False)
     ax1.xaxis.set_major_locator(mdates.WeekdayLocator(interval=4))
-    ax1.xaxis.set_major_formatter(DateFormatter("%d-%b-%Y"))
+    ax1.xaxis.set_major_formatter(DateFormatter("%b-%Y"))
     ax1.get_yaxis().set_major_formatter(ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
     ax2.get_yaxis().set_major_formatter(ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
     plt.title('Total Doses Administered vs. Daily New Cases', fontsize=18)

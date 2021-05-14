@@ -18,7 +18,7 @@ def make_plot(df_plot):
     ax.spines['right'].set_visible(False)
     ax.set_xlabel('')
     ax.xaxis.set_major_locator(mdates.WeekdayLocator(interval=4))
-    ax.xaxis.set_major_formatter(DateFormatter("%d-%b-%Y"))
+    ax.xaxis.set_major_formatter(DateFormatter("%b-%Y"))
     ax.get_yaxis().set_major_formatter(ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
     df_plot.plot(ax=ax).set_title('Daily New Cases in Public Health Units with Most Cases', fontsize=18)
     fig.savefig(DIR_IMAGES + f_plot, facecolor='oldlace')
