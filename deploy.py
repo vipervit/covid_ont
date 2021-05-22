@@ -13,6 +13,9 @@ def deploy():
     from covid_ont.py import getdata
 
     print('Making plots...')
+    # Note: the script fails on Mini if vaxregr is last to be executed; reason unknown
+    from covid_ont.py import vaxregr
+    print('vaxregr.py done.')
     from covid_ont.py import vaccases
     print('vaccases.py done.')
     from covid_ont.py import byunit
@@ -21,8 +24,6 @@ def deploy():
     print('doses.py done.')
     from covid_ont.py import deaths
     print('deaths.py done.')
-    from covid_ont.py import vaxregr
-    print('vaxregr.py done.')
 
     print('Deploying...')
     subprocess.run(['firebase', 'deploy'])
