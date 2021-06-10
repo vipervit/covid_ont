@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-__version__='1.15.08'
+__version__='1.17.01'
 
 DIR_ROOT = __file__.split('__init__')[0]
 DIR_DATA = ''.join([DIR_ROOT, 'data', os.sep])
