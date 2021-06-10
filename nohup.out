@@ -1,0 +1,80 @@
+
+[1m[37m===[39m Deploying to 'covid-ontario-timeline'...[22m
+
+[1m[36mi [39m[22m deploying [1mhosting[22m
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m beginning deploy...
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m found 117 files in [1msite[22m
+[2K[9999D[1m[36m⠋  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠙  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠹  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠸  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠼  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠴  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠦  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠧  hosting: [39m[22muploading new files [2/5] ([1m[32m40%[39m[22m)[2K[9999D[1m[36m⠇  hosting: [39m[22muploading new files [2/5] ([1m[32m40%[39m[22m)[2K[9999D[1m[36m⠏  hosting: [39m[22muploading new files [3/5] ([1m[32m60%[39m[22m)[2K[9999D[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m file upload complete
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m finalizing version...
+[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m version finalized
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m releasing new version...
+[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m release complete
+
+[1m[32m✔ [39m[22m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/covid-ontario-timeline/overview
+[1mHosting URL:[22m https://covid-ontario-timeline.web.app
+
+[1m[37m===[39m Deploying to 'covid-ontario-timeline'...[22m
+
+[1m[36mi [39m[22m deploying [1mhosting[22m
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m beginning deploy...
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m found 117 files in [1msite[22m
+[2K[9999D[1m[36m⠋  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠙  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠹  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m file upload complete
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m finalizing version...
+[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m version finalized
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m releasing new version...
+[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m release complete
+
+[1m[32m✔ [39m[22m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/covid-ontario-timeline/overview
+[1mHosting URL:[22m https://covid-ontario-timeline.web.app
+
+[1m[37m===[39m Deploying to 'covid-ontario-timeline'...[22m
+
+[1m[36mi [39m[22m deploying [1mhosting[22m
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m beginning deploy...
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m found 117 files in [1msite[22m
+[2K[9999D[1m[36m⠋  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠙  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠹  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠸  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠼  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠴  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠦  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠧  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠇  hosting: [39m[22muploading new files [2/5] ([1m[32m40%[39m[22m)[2K[9999D[1m[36m⠏  hosting: [39m[22muploading new files [2/5] ([1m[32m40%[39m[22m)[2K[9999D[1m[36m⠋  hosting: [39m[22muploading new files [4/5] ([1m[32m80%[39m[22m)[2K[9999D[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m file upload complete
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m finalizing version...
+[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m version finalized
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m releasing new version...
+[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m release complete
+
+[1m[32m✔ [39m[22m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/covid-ontario-timeline/overview
+[1mHosting URL:[22m https://covid-ontario-timeline.web.app
+
+[1m[37m===[39m Deploying to 'covid-ontario-timeline'...[22m
+
+[1m[36mi [39m[22m deploying [1mhosting[22m
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m beginning deploy...
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m found 117 files in [1msite[22m
+[2K[9999D[1m[36m⠋  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠙  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠹  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m file upload complete
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m finalizing version...
+[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m version finalized
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m releasing new version...
+[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m release complete
+
+[1m[32m✔ [39m[22m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/covid-ontario-timeline/overview
+[1mHosting URL:[22m https://covid-ontario-timeline.web.app
+
+[1m[37m===[39m Deploying to 'covid-ontario-timeline'...[22m
+
+[1m[36mi [39m[22m deploying [1mhosting[22m
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m beginning deploy...
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m found 117 files in [1msite[22m
+[2K[9999D[1m[36m⠋  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠙  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠹  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠸  hosting: [39m[22madding files to version [0/117] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠼  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠴  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠦  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠧  hosting: [39m[22muploading new files [0/5] ([1m[32m0%[39m[22m)[2K[9999D[1m[36m⠇  hosting: [39m[22muploading new files [2/5] ([1m[32m40%[39m[22m)[2K[9999D[1m[36m⠏  hosting: [39m[22muploading new files [2/5] ([1m[32m40%[39m[22m)[2K[9999D[1m[36m⠋  hosting: [39m[22muploading new files [3/5] ([1m[32m60%[39m[22m)[2K[9999D[1m[36m⠙  hosting: [39m[22muploading new files [4/5] ([1m[32m80%[39m[22m)[2K[9999D[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m file upload complete
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m finalizing version...
+[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m version finalized
+[1m[36mi  hosting[covid-ontario-timeline]:[39m[22m releasing new version...
+[1m[32m✔  hosting[covid-ontario-timeline]:[39m[22m release complete
+
+[1m[32m✔ [39m[22m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/covid-ontario-timeline/overview
+[1mHosting URL:[22m https://covid-ontario-timeline.web.app

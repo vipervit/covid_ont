@@ -25,7 +25,7 @@ f_plot='vaxregr.png'
 ontario_pop_estimate=14755211 # Q1 2021, source: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901
 forecast_depth=300
 
-df=dataset_read('Vaccinations')
+df=dataset_read('Vaccinations')[['report_date', 'previous_day_total_doses_administered', 'total_doses_administered', 'total_doses_in_fully_vaccinated_individuals', 'total_individuals_fully_vaccinated']]
 df.columns=['Date', 'Previous Day Doses Administered', 'Total Doses', 'Total Doses in Fully Vaccinated', 'Total Fully Vaccinated']
 df.fillna(0, inplace=True)
 df.set_index('Date', inplace=True)
